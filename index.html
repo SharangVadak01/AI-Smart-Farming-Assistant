@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Farming Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#home"><span class="brand-icon">🌱</span> SmartFarm AI</a>
+      <button class="menu-button" id="menuButton" aria-label="Toggle navigation">☰</button>
+      <nav id="navLinks">
+        <a href="#features">Features</a>
+        <a href="#advisory">Crop Advisory</a>
+        <a href="#tips">Farm Tips</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow">SMARTER CHOICES • HEALTHIER CROPS</p>
+          <h1>Grow better with your <span>Smart Farming Assistant</span></h1>
+          <p class="hero-text">Simple, beginner-friendly guidance for crop planning, irrigation, fertilizer use, and crop health awareness.</p>
+          <a class="button" href="#advisory">Explore crop guide <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-card" aria-label="Plant growing illustration">
+          <div class="sun"></div>
+          <div class="plant">🌿</div>
+          <div class="soil"></div>
+          <p>Small steps. Sustainable farming.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">WHAT YOU CAN EXPLORE</p>
+          <h2>Helpful tools for everyday farming</h2>
+          <p>Learn the basics and adapt them to your crop, soil, season, and local conditions.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card"><div class="feature-icon">🌾</div><h3>Crop Advisory</h3><p>Review factors to consider when choosing a crop and planning sowing.</p></article>
+          <article class="feature-card"><div class="feature-icon">💧</div><h3>Water Management</h3><p>Explore practical habits that can help reduce water waste.</p></article>
+          <article class="feature-card"><div class="feature-icon">🧪</div><h3>Fertilizer Guidance</h3><p>Learn why soil testing and recommended doses matter.</p></article>
+          <article class="feature-card"><div class="feature-icon">🍃</div><h3>Crop Health</h3><p>Recognize common warning signs and know when to ask an expert.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section advisory-section" id="advisory">
+      <div class="container advisory-layout">
+        <div>
+          <p class="eyebrow">QUICK LEARNING TOOL</p>
+          <h2>Choose a topic to get started</h2>
+          <p class="muted">Select a topic to display a short checklist. This demo provides general educational information, not a personalized farm diagnosis.</p>
+          <label for="topicSelect">Farming topic</label>
+          <select id="topicSelect">
+            <option value="crop">Crop planning</option>
+            <option value="water">Irrigation</option>
+            <option value="fertilizer">Fertilizer use</option>
+            <option value="health">Crop health</option>
+          </select>
+          <button class="button" id="showAdvice">Show guidance</button>
+        </div>
+        <div class="advice-box" aria-live="polite">
+          <h3 id="adviceTitle">Crop planning checklist</h3>
+          <ul id="adviceList">
+            <li>Check local season and climate.</li>
+            <li>Consider soil type and water availability.</li>
+            <li>Ask local agricultural services about suitable varieties.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tips">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">GOOD PRACTICES</p>
+          <h2>Four simple farm reminders</h2>
+        </div>
+        <div class="tips-grid">
+          <div class="tip"><span>01</span><div><h3>Observe regularly</h3><p>Check crops often and keep notes about changes.</p></div></div>
+          <div class="tip"><span>02</span><div><h3>Save water</h3><p>Check soil moisture and repair leaking irrigation lines.</p></div></div>
+          <div class="tip"><span>03</span><div><h3>Test your soil</h3><p>Use soil-test results and local advice to guide nutrient decisions.</p></div></div>
+          <div class="tip"><span>04</span><div><h3>Verify advice</h3><p>Ask a qualified local agriculture expert before treating crop problems.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-inner">
+        <div><p class="eyebrow">ABOUT THIS PROJECT</p><h2>Technology supporting informed farming</h2></div>
+        <p>This student project demonstrates how a simple website can organize agriculture learning resources in one place. It does not connect to live weather, sensors, or disease-detection services.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>🌱 SmartFarm AI — Student Project</p>
+      <p>Educational use only • Follow local agricultural guidance</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
